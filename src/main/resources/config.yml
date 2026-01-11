@@ -1,0 +1,54 @@
+# PvPToggle Configuration
+
+# The interval in seconds for automatic PvP toggling.
+# This value is updated automatically when you usage /pvptoggle <time>
+toggleInterval: 0
+
+# Disable lava placement when PvP is disabled
+# If true: Players cannot place lava buckets within 2 blocks of other players when PvP is off
+# If false: Lava placement is allowed normally regardless of PvP status
+disable-lava: true
+
+# Radius in blocks to check for nearby players (default: 2)
+lava-radius: 2
+
+# ===== MESSAGES =====
+# Use §a for green, §c for red, §7 for gray, §b for cyan, etc.
+
+messages:
+  # Global PvP commands
+  pvp-usage: "Usage: /pvp <on|off> [time]"
+  pvp-invalid-arg: "Invalid argument. Usage: /pvp <on|off> [time]"
+  pvp-delayed: "PvP will be §f{state}§r in §f{time}§r seconds."
+  pvp-immediate: "PvP is now §f{state}§r!"
+  
+  # Global toggle commands
+  pvptoggle-usage: "Usage: /pvptoggle <time> | /pvptoggle off"
+  pvptoggle-stopped: "PvP toggling has been turned off."
+  pvptoggle-not-active: "PvP toggling is not currently active."
+  pvptoggle-started: "PvP will toggle every §f{interval}§r seconds."
+  pvptoggle-invalid-time: "Invalid time interval. Please enter a number greater than 0."
+  pvptoggle-invalid-format: "Invalid time format. Please enter a valid number."
+  
+  # Dimension-specific PvP commands
+  pvp-dimension-usage: "Usage: /pvp{dimension} <on|off> [time]"
+  pvp-dimension-invalid-arg: "Invalid argument. Usage: /pvp{dimension} <on|off> [time]"
+  pvp-dimension-delayed: "PvP in §f{dimension}§r will be §f{state}§r in §f{time}§r seconds."
+  pvp-dimension-immediate: "PvP is now §f{state}§r §7in {dimension}!"
+  
+  # Dimension-specific toggle commands
+  pvptoggle-dimension-usage: "Usage: /pvptoggle{dimension} <time> | /pvptoggle{dimension} off"
+  pvptoggle-dimension-stopped: "PvP toggling in §f{dimension}§r has been turned off."
+  pvptoggle-dimension-not-active: "PvP toggling in §f{dimension}§r is not currently active."
+  pvptoggle-dimension-started: "PvP in §f{dimension}§r will toggle every §f{interval}§r seconds."
+  
+  # Lava placement
+  lava-blocked: "§cYou cannot place lava within §f{radius}§r blocks of other players when PvP is disabled!"
+  
+  # PvPToggleX commands
+  pvptogglex-usage: "Usage: /pvptogglex reload"
+  pvptogglex-reloaded: "§aPvPToggleX config has been reloaded!"
+  
+  # Status indicators
+  status-enabled: "§aenabled"
+  status-disabled: "§cdisabled"

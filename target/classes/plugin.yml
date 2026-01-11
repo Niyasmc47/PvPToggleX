@@ -1,0 +1,45 @@
+name: PvPToggle
+version: '1.0'
+main: org.speedrainxd.PVPtoggleX.PVPtoggleX
+api-version: '1.20'
+commands:
+  pvp:
+    description: Toggles PvP on and off for all dimensions.
+    usage: /pvp <on|off> [time]
+    permission: pvptoggle.use
+  pvptoggle:
+    description: Toggles PvP on and off at intervals for all dimensions or stops toggling.
+    usage: /pvptoggle <time> | /pvptoggle off
+    permission: pvptoggle.use
+  pvpnether:
+    description: Toggles PvP on and off for the Nether only.
+    usage: /pvpnether <on|off> [time]
+    permission: pvptoggle.use
+  pvpend:
+    description: Toggles PvP on and off for the End only.
+    usage: /pvpend <on|off> [time]
+    permission: pvptoggle.use
+  pvpoverworld:
+    description: Toggles PvP on and off for the Overworld only.
+    usage: /pvpoverworld <on|off> [time]
+    permission: pvptoggle.use
+  pvptogglenether:
+    description: Toggles PvP at intervals for the Nether or stops toggling.
+    usage: /pvptogglenether <time> | /pvptogglenether off
+    permission: pvptoggle.use
+  pvptoggleend:
+    description: Toggles PvP at intervals for the End or stops toggling.
+    usage: /pvptoggleend <time> | /pvptoggleend off
+    permission: pvptoggle.use
+  pvptoggleoverworld:
+    description: Toggles PvP at intervals for the Overworld or stops toggling.
+    usage: /pvptoggleoverworld <time> | /pvptoggleoverworld off
+    permission: pvptoggle.use
+  pvptogglex:
+    description: Reloads the PvPToggleX configuration.
+    usage: /pvptogglex reload
+    permission: pvptoggle.use
+permissions:
+  pvptoggle.use:
+    description: Allows the user to toggle PvP.
+    default: op

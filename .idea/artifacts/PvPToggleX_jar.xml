@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PvPToggleX:jar">
+    <output-path>/mnt/60B8-E030/plugins</output-path>
+    <root id="archive" name="PvPToggleX.jar">
+      <element id="module-output" name="PVPtoggleX" />
+    </root>
+  </artifact>
+</component>
